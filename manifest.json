@@ -24,6 +24,7 @@
 			],
 			"js": [
 				"jquery-3.6.0.min.js",
+				"twitch_credentials.js",
 				"content_script.js"
 			],
 			"run_at": "document_idle"
