@@ -15,13 +15,25 @@ function constructOptions(kButtonColors) {
 constructOptions(kButtonColors);
 
 $(document).ready(function () {
+  console.log('ready');
+  
   $('#loginButton').click(function () {
+    console.log('clicked');
+
+    let url = 'https://id.twitch.tv/oauth2/authorize?client_id=' + clientId +
+    '&redirect_uri=' + redirectURI +
+    '&response_type=token&scope=moderation:read';
+
+    console.log(url);
+
     $.ajax({
-      url: 'https://id.twitch.tv/oauth2/authorize?client_id=' + clientId +
-      '&redirect_uri=' + redirectURI +
-      '&response_type=' +
-    '&scope=',
-      type: 'GET'
+      url: url,
+      type: 'GET',
+      success: function (data) {
+        console.log(data);
+      }, error: function (data) {
+        console.log(data);
+      }
     })
   });
 });
