@@ -1,5 +1,6 @@
 var prevName;
 var broadcasterIds = ["198704263"];
+var accessToken;
 
 $(document).ready(function () {
     $(document).mousemove(function (e) {
@@ -19,9 +20,6 @@ $(document).ready(function () {
                         'Authorization': 'Bearer ' + accessToken,
                         'Client-Id': + clientId
                     },
-                    data: {
-
-                    }
                 })
             }
 
