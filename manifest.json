@@ -4,7 +4,7 @@
 	"description": "A chrome extension that displays what twitch channels a user has been banned in",
 	"options_page": "options.html",
 	"permissions": [
-		"activeTab",
+		"tabs",
 		"declarativeContent",
 		"storage"
 	],
@@ -25,7 +25,7 @@
             "js": [
                 "content_script.js"
             ],
-			"all_frames": true
+			"run_at": "document_idle"
         }
     ],
 	"page_action": {
