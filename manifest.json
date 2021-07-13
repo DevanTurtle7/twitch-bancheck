@@ -1,6 +1,6 @@
 {
 	"name": "BanCheck",
 	"version": "1.0",
-	"description": "",
-	"manifest_version": "2"
+	"description": "A chrome extension that displays what twitch channels a user has been banned in",
+	"manifest_version": 2
 }
