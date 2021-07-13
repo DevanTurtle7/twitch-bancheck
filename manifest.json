@@ -2,10 +2,14 @@
 	"name": "BanCheck",
 	"version": "1.0",
 	"description": "A chrome extension that displays what twitch channels a user has been banned in",
-
-	"permissions": ["storage"],
+	"permissions": [
+		"declarativeContent",
+		"storage"
+	],
 	"background": {
-		"scripts": ["background.js"],
+		"scripts": [
+			"background.js"
+		],
 		"persistent": false
 	},
 	"page_action": {
@@ -23,6 +27,5 @@
 		"48": "images/get_started48.png",
 		"128": "images/get_started128.png"
 	},
-
 	"manifest_version": 2
 }
