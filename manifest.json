@@ -17,14 +17,13 @@
 	"content_scripts": [
         {
             "matches": [
-                "http://*/*",
-                "https://*/*"
-            ],
-            "css": [
-                "imageMarker.css"
+                "https://*.twitch.tv/*",
+                "https://*.twitch.tv/",
+                "https://twitch.tv/*",
+                "https://twitch.tv/"
             ],
             "js": [
-                "imageMarker.js"
+                "content_script.js"
             ],
 			"all_frames": true
         }
