@@ -23,6 +23,7 @@
 				"https://twitch.tv/"
 			],
 			"js": [
+				"jquery-3.6.0.min.js",
 				"content_script.js"
 			],
 			"run_at": "document_idle"

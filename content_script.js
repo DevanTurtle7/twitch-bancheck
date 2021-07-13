@@ -13,3 +13,7 @@ document.addEventListener('mousemove', function (e) {
         prevName = currentName;
     }
 }, false);
+
+$(document).ready(function() {
+    console.log("testing jquery!");
+});
