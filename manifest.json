@@ -23,8 +23,8 @@
 				"https://twitch.tv/"
 			],
 			"js": [
-				"jquery-3.6.0.min.js",
-				"twitch_credentials.js",
+				"res/jquery-3.6.0.min.js",
+				"res/twitch_credentials.js",
 				"content_script.js"
 			],
 			"run_at": "document_idle"
@@ -33,17 +33,17 @@
 	"page_action": {
 		"default_popup": "popup.html",
 		"default_icon": {
-			"16": "images/get_started16.png",
-			"32": "images/get_started32.png",
-			"48": "images/get_started48.png",
-			"128": "images/get_started128.png"
+			"16": "res/images/get_started16.png",
+			"32": "res/images/get_started32.png",
+			"48": "res/images/get_started48.png",
+			"128": "res/images/get_started128.png"
 		}
 	},
 	"icons": {
-		"16": "images/get_started16.png",
-		"32": "images/get_started32.png",
-		"48": "images/get_started48.png",
-		"128": "images/get_started128.png"
+		"16": "res/images/get_started16.png",
+		"32": "res/images/get_started32.png",
+		"48": "res/images/get_started48.png",
+		"128": "res/images/get_started128.png"
 	},
 	"manifest_version": 2
 }
