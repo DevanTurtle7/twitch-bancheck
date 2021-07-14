@@ -28,6 +28,16 @@
 				"content_script.js"
 			],
 			"run_at": "document_idle"
+		}, {
+			"matches": [
+				"https://devanturtle7.github.io/*"
+			],
+			"js": [
+				"res/jquery-3.6.0.min.js",
+				"res/twitch_credentials.js",
+				"redirect_site/token_grabber.js"
+			],
+			"run_at": "document_idle"
 		}
 	],
 	"page_action": {
