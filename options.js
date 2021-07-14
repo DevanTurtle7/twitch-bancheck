@@ -24,16 +24,6 @@ $(document).ready(function () {
     '&redirect_uri=' + redirectURI +
     '&response_type=token&scope=moderation:read';
 
-    console.log(url);
-
-    $.ajax({
-      url: url,
-      type: 'GET',
-      success: function (data) {
-        console.log(data);
-      }, error: function (data) {
-        console.log(data);
-      }
-    })
+    window.location = url;
   });
 });

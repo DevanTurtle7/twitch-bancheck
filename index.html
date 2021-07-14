@@ -7,9 +7,10 @@
 <body>
     <h1>Redirect</h1>
     <script>
-        chrome.storage.sync.set({ color: '#000000' }, function () {
-            console.log('The color is green.');
-        });
+        var pattern = /(?<=access_token=).+?(?=&)/;
+        var accessToken = window.location.href.search(pattern);
+
+        console.log(pattern);
     </script>
 </body>
 
