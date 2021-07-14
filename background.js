@@ -1,4 +1,13 @@
+function firebaseInit() {
+	firebase.initializeApp(firebaseConfig);
+	db = firebase.firestore();
+
+	return db;
+}
+
 chrome.runtime.onInstalled.addListener(function () {
+	firebaseInit();
+
 	chrome.storage.sync.set({ color: '#3aa757' }, function () {
 		console.log('The color is green.');
 	});
@@ -11,5 +20,10 @@ chrome.runtime.onInstalled.addListener(function () {
 			actions: [new chrome.declarativeContent.ShowPageAction()]
 		}
 		]);
+	});
+
+	chrome.tabs.onUpdated.addListener(function (message, callback) {
+		console.log(message);
+		console.log(callback);
 	});
 });
