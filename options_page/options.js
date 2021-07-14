@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     let url = 'https://id.twitch.tv/oauth2/authorize?client_id=' + clientId +
     '&redirect_uri=' + redirectURI +
-    '&response_type=code&scope=moderation:read';
+    '&response_type=token&scope=moderation:read';
 
     window.location = url;
   });
