@@ -26,4 +26,20 @@ chrome.runtime.onInstalled.addListener(function () {
 		console.log(message);
 		console.log(callback);
 	});
+
+	console.log('calling aws');
+
+	$.ajax({
+		url: aws_url,
+		type: 'POST',
+		data: {
+			'userId': 'yo',
+			'access_token': '2',
+		},
+		success: function(data) {
+			console.log(data);
+		}, error: function(data) {
+			console.log(data);
+		}
+	})
 });

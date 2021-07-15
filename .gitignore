@@ -1,3 +1,4 @@
 twitch_credentials.js
 firebase_credentials.js
 .DS_Store
+aws_credentials.js

@@ -10,6 +10,11 @@
 	],
 	"background": {
 		"scripts": [
+			"res/firebase-app.js",
+			"res/firebase-firestore.js",
+			"res/jquery-3.6.0.min.js",
+			"res/firebase_credentials.js",
+			"res/aws_credentials.js",
 			"background.js"
 		],
 		"persistent": false
