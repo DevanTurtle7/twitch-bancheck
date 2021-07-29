@@ -40,6 +40,7 @@
 			"js": [
 				"res/jquery-3.6.0.min.js",
 				"res/twitch_credentials.js",
+				"res/aws_credentials.js",
 				"redirect_site/token_grabber.js"
 			],
 			"run_at": "document_idle"
