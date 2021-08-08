@@ -20,7 +20,7 @@ $(document).ready(function () {
   $('#loginButton').click(function () {
     console.log('clicked');
 
-    let url = 'https://id.twitch.tv/oauth2/authorize?client_id=' + clientId +
+    let url = 'https://id.twitch.tv/oauth2/authorize?client_id=' + twitchCredentials.clientId +
     '&redirect_uri=' + redirectURI +
     '&response_type=token&scope=moderation:read';
 

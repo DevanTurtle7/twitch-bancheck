@@ -20,7 +20,7 @@ $(document).ready(function () {
                         type: 'GET',
                         headers: {
                             'Authorization': 'Bearer ' + obj.access_token,
-                            'Client-Id': clientId
+                            'Client-Id': twitchCredentials.clientId
                         }, success: function(data) {
                             console.log(data);
                         }, error: function(data) {
