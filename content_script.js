@@ -1,5 +1,5 @@
-var prevName;
-var broadcasterIds = ["198704263"];
+let prevName;
+let broadcasterIds = ["198704263"];
 
 $(document).ready(function () {
     $(document).mousemove(function (e) {
