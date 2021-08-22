@@ -21,7 +21,7 @@ $(document).ready(function () {
     console.log('clicked');
 
     let url = 'https://id.twitch.tv/oauth2/authorize?client_id=' + twitchCredentials.clientId +
-    '&redirect_uri=' + redirectURI +
+    '&redirect_uri=' + twitchCredentials.redirectURI +
     '&response_type=token&scope=moderation:read';
 
     window.location = url;
